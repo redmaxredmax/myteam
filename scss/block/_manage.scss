@@ -1,0 +1,122 @@
+.manage {
+    background-color: #012F34;
+    background-image: url('../../img/manage_bg.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.manage__container {
+    padding-top: 144px;
+    display: flex;
+    gap: 125px;
+    padding-bottom: 110px;
+}
+
+.manage__title {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    max-width: 445px;
+
+    &::before {
+        content: "";
+        width: 50px;
+        height: 4px;
+        background-color: #F67E7E;
+        margin-bottom: 54px;
+        display: block;
+    }
+}
+
+.manage__block_title {
+    color: #F67E7E;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    max-width: 550px;
+    margin-bottom: 16px;
+}
+
+.manage__item {
+    margin-bottom: 32px;
+    display: flex;
+    gap: 23px;
+
+    &::before {
+        content: url('../../img/manage1.svg');
+    }
+}
+
+.manage__item2 {
+    &::before {
+        content: url('../../img/manage2.svg');
+    }
+}
+
+.manage__item3 {
+    &::before {
+        content: url('../../img/manage3.svg');
+    }
+}
+
+.manage__block_text {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    max-width: 550px;
+}
+
+@media screen and (max-width:1270px) {
+    .manage {
+        background-position: right top;
+    }
+}
+
+@media screen and (max-width:1140px) {
+    .manage__container {
+        flex-direction: column;
+        display: block;
+        padding-top: 144px;
+        padding-left: 98px;
+    }
+
+    .manage__title {
+        color: #FFF;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 64px;
+        align-items: center;
+
+    }
+}
+@media screen and (max-width:720px) {
+    .manage__container{
+        padding: 56px 24px;
+    }
+    .manage__title{
+        max-width: 234px;
+        text-align: left;
+
+        &::before{
+            margin-bottom: 32px;
+        }
+    }
+    .manage__item{
+        display: block;
+        max-width: 327px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .manage__block_title{
+        max-width: 327px;
+        text-align: center;
+    }
+    .manage__block_text{
+        max-width: 327px;
+        text-align: center;
+    }
+}

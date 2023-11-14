@@ -1,0 +1,107 @@
+.success {
+    background-image: url('../../img/success_bg1.svg'), url('../../img/success_bg2.svg');
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+}
+
+.success__container {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.success__title {
+    max-width: 932px;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.success_span {
+    color: #79C8C7;
+}
+
+.success__list {
+    display: flex;
+    gap: 30px;
+}
+
+.success__item {
+    padding-top: 92px;
+    background-image: url('../../img/success_pattern.svg');
+    background-repeat: no-repeat;
+    background-position: center 56px;
+
+    &::after {
+        content: url('../../img/success_item1.svg');
+        display: block;
+        margin-top: 32px;
+        text-align: center;
+    }
+}
+
+.success__item2 {
+    &::after {
+        content: url('../../img/success_item2.svg');
+    }
+}
+
+.success__item3 {
+    &::after {
+        content: url('../../img/success_item3.svg');
+    }
+}
+
+.success__item_text {
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    max-width: 350px;
+    margin-bottom: 24px;
+}
+
+.success__item_name {
+    color: #79C8C7;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.success__item_job {
+    color: #FFF;
+    font-family: Livvic;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+}
+
+@media screen and (max-width:1120px) {
+    .success__title {
+        max-width: 573px;
+        color: #FFF;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 48px;
+    }
+    .success__list{
+        flex-direction: column;
+    }
+    .success__item{
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0;
+    }
+    .success__item_text{
+        max-width: 573px;
+    }
+}
